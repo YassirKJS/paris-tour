@@ -1,0 +1,1 @@
+This is a web project based heavily on css, in which I will try to showcase Paris monuments, landscapes, people, etc
