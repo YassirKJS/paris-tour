@@ -20,6 +20,17 @@ body {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.81), rgba(40, 180, 133, 0.81)), url("../img/eiffel0.jpg");
     background-size: cover;
     background-position: top;
+    position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.logo {
+    height: 70px;
 }
