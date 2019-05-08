@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*now 1rem = 10px   100% being 16px  acts like overall setting that defines what 1 rem should be*/
+}
+
+body {
+  box-sizing: border-box;
+}
