@@ -1,0 +1,25 @@
+{
+  "name": "paris-tours",
+  "version": "1.0.0",
+  "description": "This is a web project based heavily on css, in which I will try to showcase Paris monuments, landscapes, people, etc",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YassirKJS/paris-tour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YassirKJS/paris-tour/issues"
+  },
+  "homepage": "https://github.com/YassirKJS/paris-tour#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
