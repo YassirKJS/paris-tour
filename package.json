@@ -4,13 +4,13 @@
   "description": "This is a web project based heavily on css, in which I will try to showcase Paris monuments, landscapes, people, etc",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YassirKJS/paris-tour.git"
   },
-  "author": "",
+  "author": "Yassir",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YassirKJS/paris-tour/issues"
