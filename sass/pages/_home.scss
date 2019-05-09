@@ -1,0 +1,7 @@
+@import "../abstracts/variables";
+
+.section-about {
+  background-color: $color-gray-light-1;
+  margin-top: -20vh; //95vh-75vh of the header
+  padding: 25rem 0;
+}
