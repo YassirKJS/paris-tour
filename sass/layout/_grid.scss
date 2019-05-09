@@ -3,7 +3,7 @@
 
 .row {
   max-width: $grid_width;
-  background-color: $color-primary;
+  //background-color: $color-primary-light;
   margin: 0 auto;
 
   &:not(:last-child) {
@@ -14,7 +14,7 @@
 
   //select all element of which the class attr starts with (* for contains, $ for ends)
   [class^="col-"] {
-    background-color: rgba(255, 111, 116, 0.74);
+    //background-color: rgba(255, 111, 116, 0.74);
     float: left;
 
     &:not(:last-child) {
