@@ -43,10 +43,28 @@
 
   //when card hovered then transform card__side--front
   &:hover &__side--front{
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   &:hover &__side--back{
     transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-brown-light, $color-brown-dark), url("../../img/arc-de-triomphe.jpg");
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark), url("../../img/arc-de-triomphe.jpg");
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url("../../img/arc-de-triomphe.jpg");
+    }
   }
 }
