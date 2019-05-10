@@ -23,8 +23,19 @@
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-brown-light, $color-brown-dark);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark);
+      }
     }
   }
 
