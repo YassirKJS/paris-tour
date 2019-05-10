@@ -5,3 +5,20 @@
   margin-top: -20vh; //95vh-75vh of the header
   padding: 25rem 0;
 }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.6),
+                  rgba($color-primary-dark, 0.35)),
+                  url("../../img/building.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -12rem;
+
+  /*select direct children*/
+  & > * {
+    transform: skewY(7deg);
+  }
+}
