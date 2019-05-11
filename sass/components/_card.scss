@@ -28,15 +28,15 @@
       transform: rotateY(180deg);
 
       &-1 {
-        background-image: linear-gradient(to right bottom, $color-brown-light, $color-brown-dark);
+        background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
       }
 
       &-2 {
-        background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark);
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
       }
 
       &-3 {
-        background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark);
+        background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark);
       }
     }
   }
@@ -56,15 +56,15 @@
     background-blend-mode: screen;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-brown-light, $color-brown-dark), url("../../img/arc-de-triomphe.jpg");
+      background-image: linear-gradient(to right bottom, rgba($color-orange-light, .4), rgba($color-orange-dark, .4)), url("../../img/abbey-aisle-altar.jpg");
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark), url("../../img/arc-de-triomphe.jpg");
+      background-image: linear-gradient(to right bottom, rgba($color-green-light, .6), rgba($color-green-dark, .6)), url("../../img/Bords-de-Marne-Canoe.jpg");
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple-dark), url("../../img/arc-de-triomphe.jpg");
+      background-image: linear-gradient(to right bottom, rgba($color-brown-light, .8), rgba($color-brown-dark, .8)), url("../../img/paris-romantique.jpg");
     }
   }
 }

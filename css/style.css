@@ -245,11 +245,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #FFA7A6, #85403F); }
+        background-image: linear-gradient(to right bottom, #FFCE71, #FFB224); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #FFC7D9, #D1889F); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #F7DBFF, #734780); }
+        background-image: linear-gradient(to right bottom, #FFC7D9, #D1889F); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -259,11 +259,11 @@ body {
     height: 23rem;
     background-blend-mode: screen; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #FFA7A6, #85403F), url("../../img/arc-de-triomphe.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 206, 113, 0.4), rgba(255, 178, 36, 0.4)), url("../../img/abbey-aisle-altar.jpg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #FFC7D9, #D1889F), url("../../img/arc-de-triomphe.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url("../../img/Bords-de-Marne-Canoe.jpg"); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #F7DBFF, #734780), url("../../img/arc-de-triomphe.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 167, 166, 0.8), rgba(133, 64, 63, 0.8)), url("../../img/paris-romantique.jpg"); }
 
 .header {
   height: 95vh;
