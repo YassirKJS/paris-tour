@@ -1,0 +1,7 @@
+Romantic Traveller:
+-hotels
+-cafes
+
+City Explorer:
+-museums
+-monuments
