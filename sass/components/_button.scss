@@ -84,10 +84,23 @@
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, .3);
     transform: translateY(-2px);
+    border-radius: 5px;
   }
 
   &:active {
     box-shadow: 0 1rem 1rem rgba($color-black, .3);
     transform: translateY(0);
+  }
+
+  &--white:link,
+  &--white:visited {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &--white:hover {
+    background-color: rgba($color-white, .2);
   }
 }
