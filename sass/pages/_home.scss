@@ -45,12 +45,18 @@
           rgba($color-white, .9) 0%,
           rgba($color-white, .9) 50%,
           transparent 50%),
-          url("../../img/architecture-buildings-chapel.jpg");
+          url("../../img/eiffel5.jpg");
   background-size: cover;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  border-radius: 35px;
+  box-shadow: 0 3rem 6rem rgba($color-black, .35);
+  transition: all .3s;
 
   height: 50rem;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5rem 8rem rgba($color-black, .35);
+  }
 
   &__form {
     width: 50%;
