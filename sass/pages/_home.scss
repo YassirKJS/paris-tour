@@ -71,15 +71,38 @@
   box-shadow: 0 3rem 6rem rgba($color-black, .35);
   transition: all .3s;
 
-  height: 50rem;
+  //height: 50rem;
 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 5rem 8rem rgba($color-black, .35);
   }
 
+  @include respond(tab-land) {
+    background-image: linear-gradient(105deg,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 65%,
+            transparent 65%),
+            url("../../img/eiffel5.jpg");
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(to right,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 100%),
+            url("../../img/eiffel5.jpg");
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }

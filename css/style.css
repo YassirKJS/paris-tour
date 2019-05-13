@@ -626,6 +626,21 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
     width: 100%;
     object-fit: cover; }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -641,6 +656,9 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   width: 90%;
   display: block;
   transition: all .5s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -664,8 +682,12 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   transform: translateY(-4rem); }
 
 .form__radio-group {
-  width: 45%;
+  width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -1157,11 +1179,22 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   background-size: cover;
   border-radius: 35px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.35);
-  transition: all .3s;
-  height: 50rem; }
+  transition: all .3s; }
   .book:hover {
     transform: translateY(-3px);
     box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.35); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../../img/eiffel5.jpg"); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../../img/eiffel5.jpg"); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
