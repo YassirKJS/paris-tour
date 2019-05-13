@@ -10,6 +10,8 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
 */
 @keyframes moveInLeft {
   0% {
@@ -51,6 +53,8 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
 */
 *,
 *::after,
@@ -73,8 +77,27 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 @font-face {
   font-family: "Coves Bold";
   src: url("../../css/fonts/Coves Bold.otf"); }
@@ -84,8 +107,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -105,12 +127,20 @@ body {
     animation-delay: 0.75s;
     animation-iteration-count: 3;
     */ }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 1rem;
     animation: moveInRight 1s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -122,6 +152,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(5deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
@@ -528,6 +564,8 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
 */
 .popup {
   height: 100vh;
@@ -634,6 +672,8 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
 */
 .row {
   max-width: 114rem;
