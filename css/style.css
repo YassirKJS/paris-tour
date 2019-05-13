@@ -175,6 +175,21 @@ body {
   .paragraph:not(last-child) {
     margin-bottom: 3rem; }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 .u-center-text {
   text-align: center !important; }
 
@@ -183,9 +198,15 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -759,6 +780,9 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 4rem; } }
   .footer__logo {
     height: 20rem;
     width: auto; }
@@ -830,8 +854,12 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation__button {
-      top: 4rem;
+      top: 3.5rem;
       right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 2.2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -937,10 +965,28 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   top: 0;
   transform: rotate(-135deg); }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 .section-about {
   background-color: #f7f7f7;
   margin-top: -20vh;
   padding: 25rem 0; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -951,19 +997,31 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   /*select direct children*/ }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 15rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -12rem; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #FFDEDA, #ff6f74); }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/eiffel5.jpg");

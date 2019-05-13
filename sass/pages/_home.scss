@@ -1,9 +1,14 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .section-about {
   background-color: $color-gray-light-1;
   margin-top: -20vh; //95vh-75vh of the header
   padding: 25rem 0;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -21,23 +26,38 @@
   & > * {
     transform: skewY(7deg);
   }
+  @include respond(tab-port) {
+    padding: 15rem 0;
+  }
 }
 
 .section-tours {
   background-color: $color-gray-light-1;
   padding: 25rem 0 15rem 0;
   margin-top: -12rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   //background-color: $color-gray-light-1;
   padding: 15rem 0;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-darker);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
