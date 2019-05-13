@@ -704,7 +704,8 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -733,10 +734,28 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 .footer {
   background-color: #333;
   padding: 6rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 4rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -747,6 +766,10 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -768,6 +791,10 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
     border-top: 1px solid #777;
     padding-top: 2rem;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
   .footer__copyright > .footer__link:hover {
     transform: rotate(-5deg) scale(1.7); }
 
