@@ -533,6 +533,21 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
       .card__price-value {
         font-size: 4rem; } }
 
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px+:        Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
+*/
 .story {
   background-color: rgba(255, 255, 255, 0.8);
   width: 75%;
@@ -543,6 +558,14 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 6rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -555,6 +578,9 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -563,6 +589,9 @@ ORDER:  Base + Typography + General Layout + Grid > Page Layout > Componenets
   .story__text {
     text-align: justify;
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
