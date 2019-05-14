@@ -12,7 +12,7 @@ const changeOnhover2 = e => {
     e.target.setAttribute('src', '../img/paritours.gif')
 };
 const changeOnUnhover2 = e => {
-    e.target.setAttribute('src', '../img/paritours-pink-logo.png')
+    e.target.setAttribute('src', '../img/paritours-pink-logo-1x.png')
 };
 
 src.addEventListener("mouseover", changeOnhover);
